@@ -3,6 +3,7 @@ const authorName = document.querySelector('#author');
 const imdbNumber = document.querySelector('#imdb');
 const addBtn = document.querySelector('#add-btn');
 let bookList = document.querySelector('#book-list');
+let movies = [];
 const titleValue = bookTitle.value;
 const authorValue = authorName.value;
 const imdbValue = imdbNumber.value;
@@ -12,6 +13,13 @@ addBtn.addEventListener('click', function() {
     let titleValue = bookTitle.value;
     let authorValue = authorName.value;
     let imdbValue = imdbNumber.value;
+    let movieObject = {
+        movieName: `${titleValue}`,
+        authorName: `${authorValue}`,
+        imdbRating: `${imdbValue}`
+    };
+    movies.push(movieObject);
+    console.log(movies);
     let bookListContent = `<tr>
                             <td class="out-values">${titleValue}</td>
                             <td class="out-values">${authorValue}</td>

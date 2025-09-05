@@ -4,8 +4,11 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body{
+    
+}
 .main-container{
-    max-width: 850px;
+    max-width: 50%;
     margin: 0 auto;
 }
 .container{
